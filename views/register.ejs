@@ -28,9 +28,9 @@
     
     <script type='text/javascript'>
         function checkPassword(){
-            const password = document.getElementById('password');
-            const confirmPassword = document.getElementById('confirmPassword');
-    
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            
             if (password === confirmPassword) {
                 return true;
             } else {

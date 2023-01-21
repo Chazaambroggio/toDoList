@@ -1,0 +1,177 @@
+html, body {
+  background-color: #ecebeb;
+  
+  /*
+  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+  */
+  background-repeat: no-repeat;
+  background-size: auto;
+  min-height: 50vw;
+  margin: 0;
+  font-family: 'helvetica neue';
+}
+
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+nav {
+  color: rgb(27, 27, 25);  
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+
+nav > form {
+  text-align: right;
+ 
+}
+
+nav > form > button {
+  color: rgb(27, 27, 25); 
+  width: auto;
+  font-size: medium;
+  background: transparent;
+}
+
+nav > form > button:hover {
+    color: black;
+}
+
+
+h1 {
+  color: #fff;
+  padding: 1vw;
+}
+
+.col-4{
+  width: 40%;
+}
+.col-6{
+  width: 60%;
+}
+
+.box {
+  max-width: 400px;
+  margin: 2vw auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.box-list {
+  margin: 0;
+}
+.box-login {
+  text-align: center;
+  padding: 5vw 1vw;
+}
+
+#heading {
+  background-color: #f2c203;
+  text-align: center;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #f2c203;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p, a {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+  text-decoration: none;
+}
+
+.box-login > form > p {
+  font-size: medium;
+  margin: 0px;
+  padding: 0px;
+}
+.box-login > form > p > a {
+  font-size: medium;
+  margin: 0px;
+  padding: 0px;
+  text-decoration-color: #f2c203;
+  text-decoration: underline;
+}
+
+
+form.item {
+  text-align: center;
+  margin-left: 20px;
+}
+.box-login > form > input {
+  margin: auto;
+}
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #f2c203;
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+  margin: .5vw;
+}
+
+.box-login > form > button {
+  border-radius: 5px;
+  margin: 3vw auto;
+  width: 80%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #f2c203;
+}
+
+::placeholder {
+  color: grey;
+  opacity: 1;
+}
+
+footer {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}

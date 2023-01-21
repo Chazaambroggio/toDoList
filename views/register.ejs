@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/styles.css">
+
+	<title>To Do List</title>
+</head>
+<body>
+        <div class="box" id="heading">
+            <h1> To Do List </h1>
+        </div>
+
+        <div class="box box-login">
+            <form action="/register" method="POST">
+                <input type="email" class="item" name="username" id="email" placeholder="Email" autocomplete="off">
+                <input type="password" class="item" name="password" id="password" placeholder="Password" autocomplete="off">
+                <input type="password" class="item" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" autocomplete="off">
+
+                <button class="button" type="submit" onclick='return checkPassword()'>Register</button>
+                <p>Already have an account? <a href="/login">Login</a></p>
+            </form>
+        </div>
+
+    <footer>Made by Santi</footer>
+
+    
+    <script type='text/javascript'>
+        function checkPassword(){
+            const password = document.getElementById('password');
+            const confirmPassword = document.getElementById('confirmPassword');
+    
+            if (password === confirmPassword) {
+                return true;
+            } else {
+                password.style.border = "2px solid red"
+                confirmPassword.style.border = "2px solid red"
+                return false;
+            }
+        }
+    </script>
+
+</body>
+</html>
